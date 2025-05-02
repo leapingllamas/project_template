@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "generic poetry/python project"
+version = "0.1.0"
+description = "generic poetry/python project"
+authors = ["Carl Anderson"]
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+pandas = "^2.2.3"
+black = "^25.1.0"
+pre-commit = "^4.2.0"
+snowflake-snowpark-python = "^1.31.0"
+snowflake-connector-python = {extras = ["pandas"], version = "^3.15.0"}
+flask = "^3.1.0"
+numpy = "^2.2.5"
+jupyter = "^1.1.1"
+scikit-learn = "^1.6.1"
+seaborn = "^0.13.2"
+
+[tool.black]
+line-length = 88
